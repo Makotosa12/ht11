@@ -1,0 +1,22 @@
+%button {
+    color: aqua;
+    border-radius: 25px;
+    background-color: black;
+    border-color: black;
+}
+
+.hi_button{
+    @extend %button;    
+}
+
+@mixin text_style($color, $border_color){
+    color: $color;
+    border-color: $border_color;
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.text{
+    @include text_style(blue, pink)
+    
+}
